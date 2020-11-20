@@ -51,7 +51,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="./履歷表.docx">紙本履歷表</a>
+                    <a class="btn btn-outline-info px-3 ml-2" target="_blank" href="./履歷表.docx">紙本履歷表</a>
                 </li>
             </ul>
         </div>
@@ -97,64 +97,75 @@
     <section>
         <div class="container">
             <h2 class="title" id="first">專長</h2>
-            <div class="row">
-                <div class="col-12">
-                    <h4>Android軟體開發</h4>
-                </div>
-                <p>製作系上之畢業專題，從設計功能、版面排版，到構思功能、撰寫程式、錯誤排除都是一個人製作。
-                    以前從沒寫過Android相關的程式，所以都是自行上網找尋原文API或參考網路上的技術論壇的討論結果來完成本次的開發。
-                </p>
+            <div class="alert alert-primary" role="alert">
+                <h4 class="alert-heading">Web網頁後端開發</h4>
+                有跟校內合作製作專題，有使用到php和html，負責的部分為html上的功能實現。
+                目前正在學習Vue.js，希能能使用我的專業來為公司來提升競爭力。
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <h4>Web網頁後端開發</h4>
-                </div>
-                <p>
-                    有跟校內合作製作專題，有使用到php和html，負責的部分為html上的功能實現。
-                    目前正在學習Vue.js。
-                </p>
+            <div class="alert alert-info" role="alert">
+                <h4 class="alert-heading">Android軟體開發</h4>
+                製作系上之畢業專題，從設計功能、版面排版，到構思功能、撰寫程式。
+                以前從沒寫過Android相關的程式，所以都是自行上網找尋原文API或參考網路上的技術論壇的討論結果來完成本次的開發。
             </div>
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container my-3">
             <h2 class="title" id="second">自傳</h2>
             <div class="row">
-                <div class="col-12">
-                    <h4>關於我</h4>
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                            href="#list-home" role="tab" aria-controls="home">關於我</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                            href="#list-profile" role="tab" aria-controls="profile">AndroidAPP</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                            href="#list-messages" role="tab" aria-controls="messages">Web網頁</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-settings" role="tab" aria-controls="settings">未來規劃</a>
+                    </div>
                 </div>
-                <p>
-                    我是葉彥良，來自台南市，我目前正在就讀國立虎尾科技大學資訊工程學系三年級，因為對電腦有點興趣，從國小時就有在接觸程式設計，到現在變成自己的專長以及專業。
-                    從小就對任何的事情有好奇心，有任何不會的技能，會先嘗試自行學習，以至於我會Word、Excel文書處理、AI的繪製和各種大大小小的應用程式，到目前為止總共學習了10種程式語言，其中包括了C、C++、C#、JAVA、JAVASCRIPT
-                    、HTML、PHP、JQUERY、PYTHON、SQL等等。
-                </p>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <p>我是葉彥良，來自台南市，我目前正在就讀國立虎尾科技大學資訊工程學系三年級，因為對電腦有點興趣，從國小時就有在接觸程式設計，到現在變成自己的專長以及專業。</p><br>
+                            <p>從小就對任何的事情有好奇心，有任何不會的技能，會先嘗試自行學習，以至於我會Word、Excel文書處理、AI的繪製和各種大大小小的應用程式，到目前為止總共學習了10種程式語言，其中包括了C、C++、C#、JAVA、JAVASCRIPT
+                                、HTML、PHP、JQUERY、PYTHON、SQL等等。</p>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+                            因為某種契機與指導老師接洽了一個校外機構的APP製作，使用的是Appinventor作為開發工具，過程中學習到了如何解讀客戶的需求，以及團隊之間要如何溝通合作，完成之後才發現寫AndroidAPP是多麼開心的一件事，所以我系上的專題將以AndroidAPP為我主要的專題工具，工具也使用到現在主流的AndroidStudio來開發，因為能使用到功能更完善，我也花更多的心力來製作，包括UI的設計、功能的豐富度和頁面的順暢等等，增加了我對APP撰寫興趣。
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            在資料庫這堂課中，老師有引導我們去接洽校外的網頁製作，所以剛好機會能接觸到SQL、HTML、PHP、JAVASCRIPT和JQUERY這幾項語法。
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            從以前到現在，我已經接觸了各種的程式語言，我也很幸運的可以讓我的興趣變成我的專業，我目前有打算推甄研究所，繼續提升我的專業，也提升我與其他人的競爭力，挑戰更難的任務，期許未來我也能繼續使用我的專業來造福更多的群眾。
+                        </div>
+                    </div>
+                </div>
             </div>
+    </section>
+    <section>
+        <div class="container my-3">
+            <h2 class="title" id="second">經歷</h2>
             <div class="row">
-                <div class="col-12">
-                    <h4>AndroidAPP</h4>
+                <div class="col-12" id="btn-g">
+                    <a class="btn btn-info mr-3" target="_blank" href="https://github.com/LiangLiang-yen">Github</a>
+                    <a class="btn btn-info mr-3" target="_blank" href="./src/project.pdf">專題</a>
+                    <a class="btn btn-primary mr-3" target="_blank" href="./src/club.pdf">社團及幹部</a>
+                    <a class="btn btn-primary mr-3" target="_blank" href="./src/Commendation.pdf">記功嘉獎</a>
+                    <a class="btn btn-warning mr-3" target="_blank" href="./src/transcript.pdf">歷年成績單</a>
                 </div>
-                <p>
-                    因為某種契機與指導老師接洽了一個校外機構的APP製作，使用的是Appinventor作為開發工具，過程中學習到了如何解讀客戶的需求，以及團隊之間要如何溝通合作，完成之後才發現寫AndroidAPP是多麼開心的一件事，所以我系上的專題將以AndroidAPP為我主要的專題工具，工具也使用到現在主流的AndroidStudio來開發，因為能使用到功能更完善，我也花更多的心力來製作，包括UI的設計、功能的豐富度和頁面的順暢等等，增加了我對APP撰寫興趣。
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h4>Web網頁</h4>
-                </div>
-                <p>
-                    在資料庫這堂課中，老師有引導我們去接洽校外的網頁製作，所以剛好機會能接觸到SQL、HTML、PHP、JAVASCRIPT和JQUERY這幾項語法 。我在我們小組中，我是分配到網頁的功能製作，所以我需要與網頁設計的人員進行溝通以及述說我的需求，來完成這個專題的製作，也提升我對網頁製作的興趣。
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h4>未來規劃</h4>
-                </div>
-                <p>
-                    從以前到現在，我已經接觸了各種的程式語言，我也很幸運的可以讓我的興趣變成我的專業，我目前有打算推甄研究所，繼續提升我的專業，也提升我與其他人的競爭力，挑戰更難的任務，期許未來我也能繼續使用我的專業來造福更多的群眾。
-                </p>
             </div>
         </div>
     </section>
+    <div class="py-3 bg-dark text-white text-center align-middle justify-content-center">
+        Copyright &COPY; Yeh NFU CSIE
+    </div>
 </body>
 
 </html>
