@@ -60,3 +60,7 @@ l::before{
 #btn-g a{
     width: 200px;
 }
+
+.dropdown-item:hover{
+    background-color: #17a2b8;
+}
